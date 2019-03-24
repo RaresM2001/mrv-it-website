@@ -1,7 +1,3 @@
-body {
-	background: #445;
-	color: #FFF;
-}
 
 #particles-js {
     background: linear-gradient(to bottom, rgba(0,0,0,0.36) 100%, transparent), 
@@ -18,7 +14,13 @@ body {
     height: 100%;
     background: transparent;
     position: absolute;
-    top: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+#particles-js h1 {
+	color: white;
+	margin-top: 300px;
 }
 
 h1 {
@@ -27,22 +29,22 @@ h1 {
 	padding: 1rem;
 	font-weight: 800;
     position: relative;
-    left: 50%;
+	left: 50%;
 	opacity: 1;
     /* transform: scale(1); */
     transform: translateX(-50%);
     transition: opacity 4s ease;
-    margin-top: 300px;
+   
     background: transparent;
 }
 
-.is-loading h1 {
+.is-loading .animated-title {
 	transform: scale(0.9);
 	opacity: 0;
 }
 
-h1:before,
-h1:after {
+ .animated-title:before,
+ .animated-title:after {
 	height: 2px;
 	width: 100%;
 	content: "";
@@ -53,17 +55,17 @@ h1:after {
 	transition-delay: 0.8s;
 }
 
-h1:before {
+  .animated-title:before {
 	top: 0;
 	left: 0;
 }
 
-h1:after {
+  .animated-title:after {
 	bottom: 0;
 	right: 0;
 }
 
-.is-loading h1:before,
-.is-loading h1:after {
+ .is-loading .animated-title:before,
+ .is-loading .animated-title:after {
 	width: 0;
 }
