@@ -60,7 +60,6 @@ $(document).ready(function () {
         reverse: false
 
     }).setClassToggle('#contactP', 'fade-in-text')
-        .addTo(controller);
-
+      .addTo(controller);
 
 });
