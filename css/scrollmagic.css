@@ -1,0 +1,33 @@
+/***************************************************
+    CSS Classes for ScrollMagic animations
+****************************************************/
+
+/* Initial position for .title classes */
+.card {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease-out;
+}
+
+/* Initial state of the laptop mockup */
+.laptop {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease-out;
+}
+
+.contact-title,
+.contact-p {
+    opacity: 0;
+    transition: all .8s ease-out;
+}
+
+/* Final state of te .title class */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-text {
+    opacity: 1;
+}
