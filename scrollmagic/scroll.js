@@ -56,10 +56,9 @@ $(document).ready(function () {
 
     var pScene = new ScrollMagic.Scene({
         triggerElement: '#contactP',
-        triggerHook: 0.7,
+        triggerHook: 0.65,
         reverse: false
 
     }).setClassToggle('#contactP', 'fade-in-text')
-      .addTo(controller);
-
+    .addTo(controller);
 });

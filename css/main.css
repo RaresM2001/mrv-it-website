@@ -2,6 +2,7 @@
     --secondary : #f9f9f9;
     --primary: #2c8aff;
     --footer: #3c3c3c;
+    --dark: #1d70d6;
 }
 
 /******************************
@@ -30,14 +31,128 @@ body {
     text-align: center;
 }
 
+
+
 /******************************
     NAVBAR SECTION
 *******************************/
+.mrv-navbar {
+    min-height: 80px;
+    width: 100%;
+    z-index: 500000;
+    position: fixed;
+    top: 0;
+}
+
+.nav-btn-wrapper {
+    width: 80px;
+    height: 80px;
+    float: right;
+    color: white;
+    position: relative;
+    margin-right: 50px;
+}
+
+.nav-btn-wrapper i {
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.solid {
+    background-color: white;
+    box-shadow: 10px 10px 13px 0px rgba(26, 24, 29, 0.05);
+}
+
+.solid .nav-btn-wrapper i{
+    color: black;
+}
+
+.logo-wrapper {
+    width: 190px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    float: left;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#navigation {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+    z-index: 900000;
+    position: fixed;
+    top: 0;
+    padding: 40px;
+    text-align: left;
+    display: none
+}
+
+.fa-times-circle {
+    font-size: 3.5rem;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.fa-times-circle:hover {
+    color: var(--dark);
+}
+
+#navigation .title {
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+
+#navigation-list {
+    list-style-type: none;
+    margin-top: 60px;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+#navigation-list hr {
+    font-weight: 600;
+}
+
+#navigation-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    max-width: 400px;
+    transition: all .4s; 
+}
+
+#navigation-list li a:hover {
+    color: var(--dark);
+}
+
+.hr {
+    width: 70%;
+    height: 4px;
+    background-color: white;
+}
 
 
 /******************************
     LANDING PAGE
 *******************************/
+
 
 .h1-text-wrapper {
     position: relative;
@@ -54,6 +169,7 @@ body {
 /******************************
     SHORT INFO SECTION
 *******************************/
+
 
 #short-info {
     padding-bottom: 50px;
@@ -84,6 +200,7 @@ body {
 /******************************
     MORE INFO SECTION
 *******************************/
+
 
 #more-info {
     background-image: url('../images/codeimg.jpg');

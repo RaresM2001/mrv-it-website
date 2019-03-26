@@ -11,6 +11,7 @@
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <!-- Local links -->
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/laptop-mockup.css">
     <link rel="stylesheet" href="css/landing-page-animation.css">
     <link rel="stylesheet" href="css/scrollmagic.css">
@@ -20,13 +21,29 @@
 </head>
 
 <body>
+    <div id="navigation">
+        <ul id="navigation-list">
+            <li class="nav-li"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-li"><a href="" class="nav-link">Contact</a></li>
+            <li class="nav-li"><a href="" class="nav-link">Portfolio</a></li>
+        </ul>
 
-    <nav></nav>
-
+        <div class="hr"></div>
+        <h1 class="title">contact@example.com</h1>
+        <i class="far fa-times-circle"></i>
+    </div>
     <div id="particles-js" class="is-loading">
         <div class="h1-wrapper">
+            <nav class="mrv-navbar">
+                <div class="logo-wrapper">
+                    <img id="logo" src="images/logos/mrv_alb_negru.png" alt="">
+                </div>
+               <div class="nav-btn-wrapper">
+                <i class="fas fa-bars"></i>
+               </div>
+            </nav>
             <div class="h1-text-wrapper">
-                <h1 class="animated-title">enterprise company .</h1>
+                <h1 class="animated-title">enterpirse company .</h1>
             </div>
         </div>
     </div>
@@ -127,7 +144,7 @@
                             <div class="mb-display">
                                 <div class="mb-screen-position">
                                     <div class="mb-screen">
-                                        <img src="images/hyper-shot-1200x900-600x450.png"/>
+                                        <img src="images/hyper-shot-1200x900-600x450.png" />
                                     </div>
                                 </div>
                             </div>
@@ -141,22 +158,23 @@
     </div>
 
     <div id="contact-us">
-       <div class="mrv-container">
-           <div class="row">
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                   <h1 class="title contact-title" id="contactTitle">Work with us !</h1>
-                   <p class="normal-paragraph contact-p" id="contactP">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Nesciunt doloribus molestiae tenetur maxime quas sed, in sunt tempore necessitatibus hic! 
-                       Delectus animi rem voluptatum.
-                   </p>
-               </div>
-           </div>
-       </div>
+        <div class="mrv-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="title contact-title" id="contactTitle">Work with us !</h1>
+                    <p class="normal-paragraph contact-p" id="contactP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt doloribus molestiae tenetur maxime quas sed, in sunt tempore necessitatibus hic!
+                        Delectus animi rem voluptatum.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87425.82294554541!2d23.546472934689813!3d46.78348183622255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sen!2sro!4v1553521213573" 
-        width="1920" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87425.82294554541!2d23.546472934689813!3d46.78348183622255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sen!2sro!4v1553521213573"
+            width="1920" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="above">
             <div class="media-container">
                 <div class="row">
@@ -206,6 +224,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script src="scrollmagic/scroll.js"></script>
+
+    <!-- Navbar script -->
+    <script src="scrollmagic/navigation.js"></script>
 </body>
 
 </html>
