@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Local links -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/landing-page-animation.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!--  -->
+    <title>MRV IT</title>
+</head>
+
+<body>
+
+    <div id="particles-js">
+        <div id="contact">
+            <div class="overlay"></div>
+            <h1 class="title" style="color: white; margin-top: 70px;">contact us</h1>
+            <div class="contact-wrapper">
+                <form class="form-horizontal" role="form" method="post" action="contact.php">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="name" name="name" value="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="email" name="email" value="" required>
+                    </div>
+                    <textarea rows="10" placeholder="message" name="message" required></textarea>
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <div class="button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        </div>
+                    </button>
+                </form>
+
+                <div class="direct-contact-container">
+                    <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker"><span class="contact-text place">Romania |
+                                    CJ</span></i></li>
+
+                        <li class="list-item"><i class="fa fa-phone"><span class="contact-text phone"><a
+                                        href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
+                        </li>
+
+                        <li class="list-item"><i class="fa fa-envelope"><span class="contact-text gmail"><a
+                                        href="mailto:#" title="Send me an email">contact@gmail.com</a></span></i></li>
+                    </ul>
+                    <hr>
+                    <ul class="social-media-list">
+                        <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-github"></i></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-facebook-f"></i></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                                <i<i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- My Local Script -->
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $("#particles-js").removeClass("is-loading");
+            }, 100);
+        });    
+    </script>
+
+
+    <!-- Prticles JS scripts -->
+    <script src="particles-js/particles.js"></script>
+    <script src="particles-js/particles.min.js"></script>
+    <script src="particles-js/app.js"></script>
+
+</body>
+
+</html>
