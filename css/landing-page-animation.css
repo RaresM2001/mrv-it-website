@@ -16,6 +16,7 @@
     position: absolute;
 	top: 0;
 	overflow: hidden;
+	padding: 20px;
 }
 
 #particles-js h1 {

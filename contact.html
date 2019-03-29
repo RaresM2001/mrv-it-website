@@ -24,55 +24,62 @@
 
 <body>
 
-    <div id="particles-js">
-        <div id="contact">
-            <div class="overlay"></div>
-            <h1 class="title" style="color: white; margin-top: 70px;">contact us</h1>
-            <div class="contact-wrapper">
-                <form class="form-horizontal" role="form" method="post" action="contact.php">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="name" name="name" value="" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="email" name="email" value="" required>
-                    </div>
-                    <textarea rows="10" placeholder="message" name="message" required></textarea>
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                        <div class="button">
-                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+    <div class="mrv-container">
+        <h1 class="title">Tell us about your needs</h1>
+        <div id="project-type">
+            <h1 class="title">1.What do you need</h1>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+                    <div class="card" id="card2">
+                        <div class="card-header">
+                            <i style="color: var(--primary)" class="far fa-window-maximize"></i>
                         </div>
-                    </button>
-                </form>
-
-                <div class="direct-contact-container">
-                    <ul class="contact-list">
-                        <li class="list-item"><i class="fa fa-map-marker"><span class="contact-text place">Romania |
-                                    CJ</span></i></li>
-
-                        <li class="list-item"><i class="fa fa-phone"><span class="contact-text phone"><a
-                                        href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
-                        </li>
-
-                        <li class="list-item"><i class="fa fa-envelope"><span class="contact-text gmail"><a
-                                        href="mailto:#" title="Send me an email">contact@gmail.com</a></span></i></li>
-                    </ul>
-                    <hr>
-                    <ul class="social-media-list">
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fab fa-github"></i></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fab fa-linkedin-in"></i></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fab fa-facebook-f"></i></i></a>
-                        </li>
-                        <li><a href="#" target="_blank" class="contact-icon">
-                                <i<i class="fab fa-twitter"></i>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                        <div class="card-body">
+                            <h4 class="card-title">Simple Website</h4>
+                            <p class="card-text">Custom designed responsive webpage for you 
+                                organisation/bussiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+                    <div class="card" id="card2">
+                        <div class="card-header">
+                                <i class="fas fa-server"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Web Application</h4>
+                            <p class="card-text">Complex web aplication with custom features,
+                                databases & services for bussiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+                    <div class="card" id="card2">
+                        <div class="card-header">
+                                <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">APIs</h4>
+                            <p class="card-text">Secure & advanced APIs for your website, web app or 
+                                mobile app.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3 p-3">
+                    <div class="card" id="card2">
+                        <div class="card-header">
+                            <i class="fab fa-android" style="color: var(--primary);"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Android App</h4>
+                            <p class="card-text">
+                                Android app with custom design, functionalities and cloud storage.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,6 +108,11 @@
     <script src="particles-js/particles.js"></script>
     <script src="particles-js/particles.min.js"></script>
     <script src="particles-js/app.js"></script>
+
+    <!-- TypedJS scripts -->
+    <script src="typed/typed.js"></script>
+    <script src="typed/typed.min.js"></script>
+    <script src="typed/type-script.js"></script>
 
 </body>
 

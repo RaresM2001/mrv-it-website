@@ -12,4 +12,11 @@ $(document).ready(function() {
         backSpeed: 55,
         loop: true
     });
+
+    var thirdTyped = new Typed('.third-type', {
+        strings: ["Let's bring your idea to life"],
+        typeSpeed: 55,
+        backSpeed: 55,
+        loop: true
+    });
 });
