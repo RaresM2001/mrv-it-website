@@ -16,7 +16,7 @@
     position: absolute;
 	top: 0;
 	overflow: hidden;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 #particles-js h1 {
@@ -37,6 +37,11 @@ h1 {
     transition: opacity 4s ease;
    
     background: transparent;
+}
+
+.animated-title {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .is-loading .animated-title {
