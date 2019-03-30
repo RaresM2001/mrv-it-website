@@ -30,16 +30,16 @@
     <div class="mrv-container">
 
         <div class="row">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-md-10 col-lg-6 offset-md-1 offset-lg-3">
                 <form>
                     <h1 class="title">Tell us about your project</h1>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
-                        <input type="email" class="form-control" id="firstName" placeholder="first name">
+                        <input type="text" class="form-control" id="firstName" placeholder="first name">
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
-                        <input type="email" class="form-control" id="lastName" placeholder="last name">
+                        <input type="text" class="form-control" id="lastName" placeholder="last name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="email" class="form-control" id="phone" placeholder="phone number">
+                        <input type="text" class="form-control" id="phone" placeholder="phone number">
                     </div>
                     <div class="form-group">
                         <div class="form-row">
@@ -76,7 +76,7 @@
                         <textarea class="form-control" id="projectInfo" rows="7"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Send message!</button>
+                        <button type="submit" id="submitBtn">Send message!</button>
                     </div>
                 </form>
             </div>
@@ -96,6 +96,8 @@
     <script src="particles-js/particles.min.js"></script>
     <script src="particles-js/app.js"></script>
 
+    <!-- Mailer script -->
+    <script src="wizzard/send-mail.js"></script>
 </body>
 
 </html>

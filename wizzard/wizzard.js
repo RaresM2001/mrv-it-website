@@ -10,7 +10,7 @@ $(document).ready(function() {
         
         //storging the user input 
         localStorage.projectType = $(this).attr('data-target');
-        console.log(localStorage.projectType);
+        // console.log(localStorage.projectType);
         
         // redirecting
         setInterval(function() {
