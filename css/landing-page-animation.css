@@ -49,29 +49,69 @@ h1 {
 	opacity: 0;
 }
 
- .animated-title:before,
- .animated-title:after {
-	height: 2px;
-	width: 100%;
-	content: "";
-	background: white;
-	display: block;
+body {
+	background-color:#aaa;
+  } 
+  svg {
+	width:100%;
+	margin-top: 350px;
+  }
+  .text--line {
+	font-size:4.5rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight:600;
+  }
+  
+  #outline {
+	fill: none;
+	stroke:white;
+	stroke-dasharray:100%;
+	stroke-dashoffset:0;
+	animation-name: outline;
+	animation-duration: 6s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+  }
+  
+  #fill {
+	fill-opacity: 0;
+	fill:white;
+	animation-name: fill;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  }
+  
+  
+  @keyframes outline{
+	from{
+	  stroke-dashoffset:100%;
+	}
+	
+	to{
+	  stroke-dashoffset:0;
+	}
+  }
+  
+  @keyframes fill{
+	from{
+	  fill-opacity: 0;
+	}
+	
+	to{
+	  fill-opacity: 1;
+	}
+  }
+
+.under-title {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	font-style: italic;
 	position: absolute;
-	transition: width 0.4s ease;
-	transition-delay: 0.8s;
-}
-
-  .animated-title:before {
-	top: 0;
-	left: 0;
-}
-
-  .animated-title:after {
-	bottom: 0;
-	right: 0;
-}
-
- .is-loading .animated-title:before,
- .is-loading .animated-title:after {
-	width: 0;
+	left:50%;
+	top: 95%;
+	transform: translateX(-50%) translateY(-50%);
+	display: none;
 }

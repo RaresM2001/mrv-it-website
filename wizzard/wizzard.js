@@ -10,11 +10,11 @@ $(document).ready(function() {
         
         //storging the user input 
         localStorage.projectType = $(this).attr('data-target');
-        // console.log(localStorage.projectType);
         
         // redirecting
         setInterval(function() {
-            window.location.replace('http://127.0.0.1:5500/form.html')
+            //console.log(window.localtion.href);
+            window.location.href = 'form.html';
         }, 500);
     });
 });

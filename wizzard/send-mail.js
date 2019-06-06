@@ -12,14 +12,15 @@ $(document).ready(function(){
         const city = $('#city').val();
         const projectInfo = $('#projectInfo').val();
 
+
         //mail related variables
         const from = firstName + " " + lastNme;
         const basicInfo = email + ", " + phone;
         const location = stateRegion + ", " + city;
-
+        
         //making the request to mailer API
         $.ajax({
-            url: 'https://shrouded-caverns-53253.herokuapp.com/api/mail',
+            url: 'http://localhost:3000/send_mail',
             type: 'POST',
             contentType: 'application/json',
             dataType: 'json',
@@ -31,10 +32,10 @@ $(document).ready(function(){
                 "type": localStorage.projectType
             }),
             success: function(data){
-                window.location.replace('http://127.0.0.1:5500/thank-you.html')
+                window.location.replace('https://mrv-it.com/thank-you.html')
             },
             error: function(error){
-                window.location.replace('http://127.0.0.1:5500/thank-you.html')
+                window.location.replace('https://mrv-it.com/thank-you.html')
             },
           
         });
