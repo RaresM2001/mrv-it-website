@@ -19,6 +19,7 @@
 }
 
 .btn {
+  outline: none;
   border: none;
   display: block;
   text-align: center;
