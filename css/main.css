@@ -22,6 +22,7 @@ html {
 body {
     background-color: white;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 .mrv-container {
@@ -35,7 +36,7 @@ body {
 }
 
 .title {
-    margin-top: 50px;
+    margin-top: 10px;
     color: black;
     margin-bottom: 80px;
     text-align: center;
@@ -212,7 +213,7 @@ nav {
 }
 
 .media i:hover {
-    color: orange;
+    color: var(--primary);
 }
 
 
@@ -530,6 +531,74 @@ iframe {
 .left {
     width: 50%;
     float: left;
+}
+
+
+/******************************
+    STATISTICS SECTION
+*******************************/
+
+#statistics-section {
+    margin-top: 100px;
+}
+
+#numbers-wrapper {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.number-container {
+    width: 50%;
+    position: relative;
+    height: 300px;
+    float: left;
+}
+
+.nr-container1 {
+    /* background-color: red; */
+    border-bottom: .5px solid #F5F7FA;
+    border-right: .5px solid #F5F7FA;
+}
+
+.nr-container2 {
+    /* background-color: blue; */
+    border-bottom: .5px solid #F5F7FA;
+    border-left: .5px solid #F5F7FA;
+}
+
+.nr-container3 {
+    border-top: .5px solid #F5F7FA;
+    border-right: .5px solid #F5F7FA;
+    /* background-color: green; */
+}
+
+.nr-container4 {
+    /* background-color: yellow; */
+    border-top: .5px solid #F5F7FA;
+    border-left: .5px solid #F5F7FA;
+}
+
+.subtitle {
+    font-size: 2em;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+
+#statistics-section .title {
+    font-weight: 400;
+}
+
+.text-wrapper {
+    /* width: 200px; */
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 
