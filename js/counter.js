@@ -7,32 +7,41 @@ $(document).ready(function() {
 
     // keeping track if we already animated or not 
     var animated = false;
-    // getting the valueToBeAnimated and converting to int in base 10
-    var valueToBeAnimated = parseInt($('.num').text(), 10);
-    // setting the displayed text to 0
-    $('.num').text(0);
-
+   
     // the function that actually animates the elements
     function animateStatistics(time) {
-        // the current value of the stat
-        var value = 0;
-        // time between count animations 
-        var timeBetweenAnimations = time / valueToBeAnimated;
+        console.log($('.num').text());
+        $('.num').each(function(index) {
+            
+             // the current value of the stat
+            var value = 0;
 
-        /**
-         * Starting a setInterval using @var timeBetweenAnimations 
-         * using the @function increaseCounter function
-         */
+            // time between count animations 
+            var timeBetweenAnimations = time / valueToBeAnimated;
 
-        var intervalID = setInterval(function() {
-            // increasing the value of the stat number
-            $('.num').text(++value);
+            // getting the value to be animated from each div.num element
+            var valueToBeAnimated = parseInt($(this).text(), 10);
+            console.log(valueToBeAnimated);
 
-            // when we reach the actual value we stop animating
-            if (value === valueToBeAnimated) {
-                clearInterval(intervalID);
+            // setting the displayed text to 0
+            $(this).text(0);
+
+            /**
+             * Starting a setInterval using @var timeBetweenAnimations 
+             * using the @function increaseCounter function
+             */
+
+            var intervalID = setInterval(function() {
+                // increasing the value of the stat number
+                $('.num').text(++value);
+
+                // when we reach the actual value we stop animating
+                if (value === valueToBeAnimated) {
+                    clearInterval(intervalID);
+                }
+            }, timeBetweenAnimations);
             }
-        }, timeBetweenAnimations);
+        ); //end of each statement
     }
 
     /**
@@ -42,15 +51,17 @@ $(document).ready(function() {
 
     $(document).scroll(function() {
 
+       
+
         var topOffset = $(this).scrollTop();
-        var statsOffset = $('#statistics-section').offset().top;
+        var statsOffset = $('.title').offset().top;
 
         // if we scrolled to the correct position animate +- 50 px because javascript
-        if (topOffset == statsOffset || topOffset <= statsOffset + 50 &&
-            topOffset >= statsOffset + -50) {
+        if (topOffset >= statsOffset) {
             if (!animated) {
                 animated = true;
-                animateStatistics(2000);
+                console.log('start animation');
+                animateStatistics(3000);
             }
 
         }
