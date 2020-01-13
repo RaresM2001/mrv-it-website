@@ -487,6 +487,7 @@ iframe {
 }
 
 #mockup-container {
+    margin-top: 50px;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -533,6 +534,20 @@ iframe {
     float: left;
 }
 
+.mockups-right {
+    width: 60%;
+}
+.mockups-left {
+    width: 40%;
+}
+
+.text-wrapper .num-title {
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
 
 /******************************
     STATISTICS SECTION
@@ -605,15 +620,6 @@ iframe {
 /******************************
     MEDIA QUERIES
 *******************************/
-
-@media only screen and (max-width: 1600px) {
-    .mockups-right {
-        width: 60%;
-    }
-    .mockups-left {
-        width: 40%;
-    }
-}
 
 @media only screen and (max-width: 1400px) {
     .mrv-container {

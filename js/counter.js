@@ -10,21 +10,24 @@ $(document).ready(function() {
    
     // the function that actually animates the elements
     function animateStatistics(time) {
+        console.log('Animation function called');
         console.log($('.num').text());
         $('.num').each(function(index) {
             
-             // the current value of the stat
+            //storing the current number we animate so we can 
+            // change the nuber's value in the setInterval scope
+            var numberToBeAnimated = $(this);
+
+            // the current value of the stat
             var value = 0;
 
-            // time between count animations 
-            var timeBetweenAnimations = time / valueToBeAnimated;
-
             // getting the value to be animated from each div.num element
-            var valueToBeAnimated = parseInt($(this).text(), 10);
-            console.log(valueToBeAnimated);
+            var valueToBeAnimated = parseInt(numberToBeAnimated.text(), 10);
+            numberToBeAnimated.text(0);
 
-            // setting the displayed text to 0
-            $(this).text(0);
+            // geting the time between count animations 
+            var timeBetweenAnimations = time / valueToBeAnimated;
+            console.log(timeBetweenAnimations);
 
             /**
              * Starting a setInterval using @var timeBetweenAnimations 
@@ -33,7 +36,7 @@ $(document).ready(function() {
 
             var intervalID = setInterval(function() {
                 // increasing the value of the stat number
-                $('.num').text(++value);
+                numberToBeAnimated.text(++value);
 
                 // when we reach the actual value we stop animating
                 if (value === valueToBeAnimated) {
@@ -50,9 +53,6 @@ $(document).ready(function() {
      */
 
     $(document).scroll(function() {
-
-       
-
         var topOffset = $(this).scrollTop();
         var statsOffset = $('.title').offset().top;
 
@@ -60,11 +60,9 @@ $(document).ready(function() {
         if (topOffset >= statsOffset) {
             if (!animated) {
                 animated = true;
-                console.log('start animation');
                 animateStatistics(3000);
             }
 
         }
     });
-
 });
